@@ -40,7 +40,7 @@ Page({
 
   // 跳转到拍照页面
   goToTakePhoto() {
-    wx.redirectTo({
+    wx.navigateTo({
       url: '../takephoto/takephoto',
     })
   },
