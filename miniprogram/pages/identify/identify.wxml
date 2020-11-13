@@ -63,6 +63,7 @@
 	</button>
 </view>
 
+
 <!-- 底部窗口的开始 -->
 <view class="cu-modal bottom-modal {{modalName=='bottomModal'?'show':''}}">
 	<view class="cu-dialog">
@@ -71,6 +72,7 @@
 			<view class="action text-blue" bindtap="hideModal">取消</view>
 		</view>
 		<!-- 底部窗口的内容开始 -->
+		<scroll-view scroll-y='true'>
 		<view class="mushInfo">
 			<view class='show'>
 				<image class='show-img bg-img' mode='widthFix' src='{{img}}' />
@@ -90,9 +92,11 @@
 			<!-- 显示相应的野生菌识别结果的结束 -->
 		</view>
 		<!-- 底部窗口的内容结束 -->
+	</scroll-view>
 	</view>
 </view>
 <!-- 底部窗口的结束 -->
+
 
 <!-- 图片弹窗1的开始 -->
 <view class="cu-modal {{imgModalName=='Image1'?'show':''}}">

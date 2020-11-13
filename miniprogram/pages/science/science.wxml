@@ -1,6 +1,6 @@
 <!-- 展示页面的开始 -- >
 <!-- 可指定bg-mask实现面罩效果 -->
-<view class="bg-img" style="background-image: url('https://s3.ax1x.com/2020/11/13/D9C7Se.jpg');height: 207px;">
+<view class="bg-img" style="background-image: url('https://s3.ax1x.com/2020/11/14/D9WRJS.jpg');height: 207px;">
 	<view class="grid padding-xl text-black col-1 fr">
 		<view class="padding-xs text-xl text-center text-white">野生菌</view>
 		<view class="text-center text-white">WILDFUNGI</view>
