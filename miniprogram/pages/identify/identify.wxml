@@ -1,0 +1,151 @@
+<!-- 搜索框的开始 -->
+<view>
+	<view>
+		<view class="weui-search-bar">
+			<view class="weui-search-bar__form">
+				<!-- 编辑时的搜索框 -->
+				<view class="weui-search-bar__box">
+					<icon class="weui-icon-search_in-box" type="search" size="14" />
+					<input type="text" class="weui-search-bar__input" placeholder="请输入搜索内容..." />
+				</view>
+				<!-- 初始时的搜索框 -->
+				<label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+					<icon class="weui-icon-search" type="search" size="14" />
+					<view class="weui-search-bar__text">搜索</view>
+				</label>
+			</view>
+			<!-- 取消搜索 -->
+			<view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+		</view>
+	</view>
+</view>
+<!-- 搜索框的结束 -->
+
+<!-- 图片的开始 -->
+<view class="padding text-center u1">
+	<view class="padding-xl radius shadow-blur bg-red margin-top bg-img" style="background-image:url(https://s3.ax1x.com/2020/11/13/DplXSs.jpg);">
+		<view class="text-shadow text-white text-left text-lg">
+			<text class="u2 text-bold">一日一菌</text>
+		</view>
+	</view>
+</view>
+<!-- 图片的结束 -->
+<view class="question">一日一菌，你认识它吗？</view>
+<view class="caicai">
+	<text>今天只有32%的人猜对</text>
+</view>
+
+<!-- 每日一猜按钮的开始 -->
+<view class="flex padding">
+	<view class="padding-left-xxs padding-right-xs">
+		<button class='cu-btn flex-sub round line-grey button-hover' bindtap="chocie1" role="buuton" style="width:216rpx">
+			<text class='u3'>红菇</text>
+		</button>
+	</view>
+	<view class="padding-lr-xs">
+		<button class='cu-btn flex-sub round line-grey button-hover' bindtap="chocie2" role="buuton" style="width:216rpx">
+			<text class='u3'>毒蝇伞</text>
+		</button>
+	</view>
+	<view class="padding-left-xs padding-right-xss">
+		<button class='cu-btn flex-sub round line-grey button-hover' bindtap="chocie3" role="buuton" style="width:216rpx">
+			<text class='u3'>红葱菌</text>
+		</button>
+	</view>
+</view>
+<!-- 每日一猜按钮的结束 -->
+
+<view class='choose text-center text-shadow text-orange' bindtap="onCameraTap" data-target="bottomModal">从相册选择 ></view>
+<view class="padding flex flex-wrap justify-center align-center">
+	<button bindtap="goToTakePhoto" class="cu-btn lg round bg-gradual-orange shadow text-xxl">
+		<text class="cuIcon-camerafill justify-start" style=" font-size: 22px; padding: 12rpx"/>
+		<text class="text-xxl">拍照识菌</text>
+	</button>
+</view>
+
+<!-- 底部窗口的开始 -->
+<view class="cu-modal bottom-modal {{modalName=='bottomModal'?'show':''}}">
+	<view class="cu-dialog">
+		<view class="cu-bar bg-white">
+			<view class="action text-green" bindtap="hideModal">确定</view>
+			<view class="action text-blue" bindtap="hideModal">取消</view>
+		</view>
+		<!-- 底部窗口的内容开始 -->
+		<view class="mushInfo">
+			<view class='show'>
+				<image class='show-img bg-img' mode='widthFix' src='{{img}}' />
+			</view>
+			<view class='dividing-line' />
+			<!-- 显示相应的野生菌识别结果的开始 -->
+			<view class='u4 bg-img analysis-result padding-tb padding-lr-sm text-left text-black radius shadow-blur' style="background-image: url('https://p.pstatp.com/origin/137d2000397cfa613fa3c'); height: 100%">
+				<view class="padding-tb-xs">该野生菌为：<text class="text-pink">{{name[con.class_id][0]}}</text></view>
+				<view class="padding-tb-xs">毒性：<text>{{name[con.class_id][1]}}</text></view>
+				<view class="padding-tb-xs">别称：<text>{{name[con.class_id][2]}}</text></view>
+				<view class="padding-tb-xs">口感：<text>{{name[con.class_id][3]}}</text></view>
+				<view class="padding-tb-xs">形态特征：<text>{{name[con.class_id][4]}}</text></view>
+				<view class="padding-tb-xs">分布地区：<text>{{name[con.class_id][5]}}</text></view>
+				<view class="padding-tb-xs">食用价值：<text>{{name[con.class_id][6][0]}}</text></view>
+				<view class="padding-tb-xs">药用价值：<text>{{name[con.class_id][6][1]}}</text></view>
+			</view>
+			<!-- 显示相应的野生菌识别结果的结束 -->
+		</view>
+		<!-- 底部窗口的内容结束 -->
+	</view>
+</view>
+<!-- 底部窗口的结束 -->
+
+<!-- 图片弹窗1的开始 -->
+<view class="cu-modal {{imgModalName=='Image1'?'show':''}}">
+  <view class="cu-dialog">
+    <view class="bg-img" style="background-image: url('https://s3.ax1x.com/2020/11/13/D9N2X4.jpg');height:200px;">
+      <view class="cu-bar justify-end text-white">
+        <view class="action" bindtap="hideModal">
+          <text class="cuIcon-close "></text>
+        </view>
+      </view>
+		</view>
+		<view class="padding text-blue">红菇长这样😏再猜猜吧~~</view>
+    <view class="cu-bar bg-white">
+      <view class="action margin-0 flex-sub  solid-left" bindtap="hideModal">我知道了</view>
+    </view>
+  </view>
+</view>
+<!-- 图片弹窗1的结束 -->
+
+<!-- 图片弹窗2的开始-->
+<view class="cu-modal {{imgModalName=='Image2'?'show':''}}">
+  <view class="cu-dialog">
+    <view class="bg-img" style="background-image: url('https://s3.ax1x.com/2020/11/13/DplXSs.jpg');height:200px;">
+      <view class="cu-bar justify-end text-white">
+        <view class="action" bindtap="hideModal">
+          <text class="cuIcon-close "></text>
+        </view>
+      </view>
+		</view>
+		<view class="padding text-blue">恭喜你，答对了！</view>
+    <view class="cu-bar bg-white">
+      <view class="action margin-0 flex-sub  solid-left" bindtap="hideModal">我知道了</view>
+    </view>
+  </view>
+</view>
+<!-- 图片弹窗2的结束 -->
+
+<!-- 图片弹窗3的开始 -->
+<view class="cu-modal {{imgModalName=='Image3'?'show':''}}">
+  <view class="cu-dialog">
+    <view class="bg-img" style="background-image: url('https://s3.ax1x.com/2020/11/13/D9UBKe.jpg');height:200px;">
+      <view class="cu-bar justify-end text-white">
+        <view class="action" bindtap="hideModal">
+          <text class="cuIcon-close "></text>
+        </view>
+      </view>
+		</view>
+		<view class="padding text-blue">红葱菌长这样😏再猜猜吧~~</view>
+    <view class="cu-bar bg-white">
+      <view class="action margin-0 flex-sub  solid-left" bindtap="hideModal">我知道了</view>
+    </view>
+  </view>
+</view>
+<!-- 图片弹窗3的结束 -->
+
+

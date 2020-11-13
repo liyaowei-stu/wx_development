@@ -1,0 +1,22 @@
+/* pages/takephoto/takephoto.wxss */
+.takphobutt {
+  margin-top: 10px;
+}
+/* pages/camera.wxss */
+.controls {
+  position: relative;
+  top: 5%;
+  display: flex;
+}
+
+.u4 {
+  font-family: 'FZCuHeiSongS-B-GB';
+}
+
+.photo {
+  position:fixed; 
+  bottom:0;
+  padding-left: 42%; 
+  width:130rpx;
+  height:130rpx;
+}

@@ -1,0 +1,17 @@
+<view class="solids-bottom padding-tb-sm flex align-center">
+  <view class="flex-sub text-center">
+    <view class="solid-bottom text-xl padding-lr-xl">
+      <text class="text-black text-bold">天然美食紫色野生菌 </text>
+    </view>
+  </view>
+</view>
+
+<view class="detail">
+    <text >{{p1}}\n</text>
+    <view class="myimg"><image src="https://s3.ax1x.com/2020/11/13/D9MxzR.png" class="images"></image></view>
+    <text >{{p2}}\n</text>
+    <view class="myimg"><image src="https://s3.ax1x.com/2020/11/13/D9Q9L6.png" class="images"></image></view>
+    <text >{{p3}}\n</text>
+    <view class="myimg"><image src="https://s3.ax1x.com/2020/11/13/D9QFoD.png" class="images"></image></view>
+    <text >{{p4}}\n</text>
+</view>

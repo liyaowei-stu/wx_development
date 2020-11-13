@@ -1,0 +1,75 @@
+<!-- pages/showResult/showResult.wxml -->
+<view class='show'>
+  <image class='radius shadow-blur bg-img' mode='' src='{{img}}' style="height: 700rpx;" />
+</view>
+<view class='dividing-line' />
+<!-- 显示相应的野生菌识别结果的开始 -->
+<view class='analysis-result'>
+  <view class='u4 bg-img analysis-result padding-tb padding-lr-sm text-left text-black radius shadow-blur' style="background-image: url('https://p.pstatp.com/origin/137d2000397cfa613fa3c'); height: 100%">
+    <!-- 若识别结果是菌种，显示各类信息 -->
+    <view wx:if="{{show==true}}">
+      <view class="padding-tb-xs">
+        该野生菌为：
+        <text class="text-pink">{{name[class_id][0]}}</text>
+      </view>
+      <view class="padding-tb-xs">
+        毒性：
+        <text>{{name[class_id][1]}}</text>
+      </view>
+      <view class="padding-tb-xs">
+        别称：
+        <text>{{name[class_id][2]}}</text>
+      </view>
+      <view class="padding-tb-xs">
+        口感：
+        <text>{{name[class_id][3]}}</text>
+      </view>
+      <view class="padding-tb-xs">
+        形态特征：
+        <text>{{name[class_id][4]}}</text>
+      </view>
+      <view class="padding-tb-xs">
+        分布地区：
+        <text>{{name[class_id][5]}}</text>
+      </view>
+      <view class="padding-tb-xs">
+        食用价值：
+        <text>{{name[class_id][6][0]}}</text>
+      </view>
+      <view class="padding-tb-xs">
+        药用价值：
+        <text>{{name[class_id][6][1]}}</text>
+      </view>
+    </view>
+    <!-- 若识别结果不是菌种，则不显示各类信息,并以弹窗的形式提示用户 -->
+    <view wx:elif="{{show==false}}">
+      <view class="cu-modal {{modalName=='Modal'?'show':''}}">
+        <view class="cu-dialog">
+          <!-- 对话框标题的开始 -->
+          <view class="cu-bar bg-white justify-end">
+            <view class="content">Tips</view>
+            <!-- 关闭 -->
+            <view class="action" bindtap="hideModal">
+              <text class="cuIcon-close text-red"></text>
+            </view>
+            <!-- 关闭 -->
+          </view>
+          <!-- 对话框标题的结束 -->
+          <!-- 对话框内容的开始 -->
+          <view class="padding-xl">
+            <text class="text-pink">{{name[class_id][0]}}</text>
+          </view>
+          <!-- 对话框内容的结束 -->
+          <!-- 确定与取消按钮的开始 -->
+          <view class="cu-bar bg-white justify-end">
+            <view class="action">
+              <button class="cu-btn bg-green margin-left" bindtap="hideModal">确定</button>
+            </view>
+          </view>
+          <!-- 确定与取消按钮的结束 -->
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 显示相应的野生菌识别结果的结束 -->

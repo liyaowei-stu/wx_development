@@ -1,0 +1,5 @@
+<!--pages/detail/detail.wxml-->
+<image mode='widthFix' bindtap="previewImage" src="{{fileID}}"></image>
+<textarea  placeholder="添加照片描述..." bindinput="getcomments" value="{{comments}}"></textarea>
+<button  class="text-black" bindtap="saveComment" >保存</button>
+

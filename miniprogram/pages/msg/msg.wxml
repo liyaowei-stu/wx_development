@@ -1,0 +1,102 @@
+<view class="cu-bar bg-white">
+  <view class="action">
+    <text class="cuIcon-title text-pink"></text> 每日看菌
+  </view>
+  
+</view>
+
+<swiper class="screen-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
+  <swiper-item wx:for="{{swiperList}}" wx:key="id">
+    <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+    <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+  </swiper-item>
+</swiper>
+
+
+<view class="cu-bar bg-white solid-bottom margin-top">
+  <view class='action'>
+    <text class='cuIcon-titles text-orange '></text> 每日资讯
+  </view>
+</view>
+<!-- 十大毒蘑菇的开始 -->
+<view class="cu-card article {{isCard?'no-card':''}}">
+  <view class="cu-item shadow">
+    <view class="title">
+      <view class="text-cut" bindtap="goToPassageIno">世界十大致命毒蘑菇，全见过的人不多！</view>
+    </view>
+    <view class="content">
+      <image src="https://s3.ax1x.com/2020/11/12/BzBU2T.png" mode="aspectFill" bindtap="goToPassageIno"></image>
+      <view class="desc">
+        <view class="text-content"> 死亡帽 恶魔的雪茄 血齿菌 天蓝蘑菇 毒鹅膏 鹿花菌 死亡天使 荧光小菇 伞形毒菌 云芝</view>
+        <view>
+          <view class="cu-tag bg-red light sm round">毒蘑菇</view>
+          <view class="cu-tag bg-green light sm round">警惕</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 十大毒蘑菇的结束 -->
+<!-- 巨型菌的开始 -->
+<view class="cu-card article {{isCard?'no-card':''}}">
+  <view class="cu-item shadow">
+    <view class="title">
+      <view class="text-cut" bindtap="goTolargemushroom">云南一村民捡到一窝巨型野生菌：重达156公斤</view>
+      <!-- 跳转 -->
+    </view>
+    <view class="content">
+      <image src="https://s3.ax1x.com/2020/11/12/Bzw5lD.png" mode="aspectFill" bindtap="goTolargemushroom"></image>
+       <!-- 跳转 -->
+      <view class="desc">
+        <view class="text-content"> 近日在云南省玉溪市华宁县冲麦村，一村民发现了一窝156公斤的巨型野生菌。报道称，这位村民前往附近的山上寻找能吃的野生菌，结果无意中发现了这窝巨型野生菌。由于太大，当时只能将野生菌分开搬运，找了七八个人才搬回去。</view>
+        <view>
+          <view class="cu-tag bg-red light sm round">巨型野生菌</view>
+          <view class="cu-tag bg-green light sm round">156公斤</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 巨型菌的结束 -->
+<!-- 见手青的开始 -->
+<view class="cu-card article {{isCard?'no-card':''}}">
+  <view class="cu-item shadow">
+    <view class="title">
+      <view class="text-cut" bindtap="goTojianshouqing">云南人尝鲜见手青蘑菇能看到小精灵？这不好玩 还很严重</view>
+       <!-- 跳转 -->
+    </view>
+    <view class="content">
+      <image src="https://s3.ax1x.com/2020/11/12/Bzw6m9.png" mode="aspectFill" bindtap="goTojianshouqing"></image>
+       <!-- 跳转 -->
+      <view class="desc">
+        <view class="text-content"> 最近云南人吃蘑菇的事又上热点了，微博、抖音、快手等平台都有云南人吃了野生菌之后看到小人、小精灵的视频，很多人还觉得很好玩，甚至不少人都希望体验一下这种中毒致幻后的快感。</view>
+        <view>
+          <view class="cu-tag bg-red light sm round">见手青蘑菇</view>
+          <view class="cu-tag bg-green light sm round">小精灵</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 见手青的结束 -->
+<!-- 野生菌辨别的开始 -->
+<view class="cu-card article {{isCard?'no-card':''}}">
+  <view class="cu-item shadow">
+    <view class="title">
+       <!-- 跳转 -->
+      <view class="text-cut" bindtap="goTodiscern">天然美食紫色野生菌</view>
+    </view>
+    <view class="content">
+      <image src="https://s3.ax1x.com/2020/11/12/BzBGan.png" mode="aspectFill" bindtap="goTodiscern"></image>
+       <!-- 跳转 -->
+      <view class="desc">
+        <view class="text-content"> 野当云南连绵的阴雨悄悄退去，难得一见的阳光洒进了潮湿的青杠树林，青苔上闪动着可爱的水珠。这时候紫色</view>
+        <view>
+          <view class="cu-tag bg-red light sm round">天然美食</view>
+          <view class="cu-tag bg-green light sm round">野生菌</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 野生菌辨别的结束 -->

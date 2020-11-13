@@ -1,0 +1,17 @@
+/* pages/detail/detail.wxss */
+image {
+  width: 100%;
+  height: 10px;
+}
+
+textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  font-size:15px;
+}
+
+button {
+  border-radius: 0 !important;
+  width: 100% !important;
+  background-color: lightcyan !important;
+}

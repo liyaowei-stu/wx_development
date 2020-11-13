@@ -1,0 +1,17 @@
+<!--pages/albums/albums.wxml-->
+<view>
+    <view class="images clearfix">
+        <view class="list-content">
+            <block wx:for="{{photo}}" wx:key="index">
+                <view class="pic" data-index="{{index}}" bindtap="todetail" bindlongpress="removeImage">
+                    <image src="{{item.fileID}}" class="image" mode="aspectFill"></image>
+                </view>
+            </block>
+        </view>
+    </view>
+    <view class='addbutton'>
+      <view class='add-item' bindtap="chooseImage">
+        <image class='add-icon' src='/images/add.png'></image>
+      </view>      
+   </view>
+</view>

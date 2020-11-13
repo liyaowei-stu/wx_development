@@ -1,0 +1,36 @@
+.images {
+  display: flex;
+}
+
+.list-content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20rpx 15rpx 20rpx 15rpx;
+}
+
+.list-content .pic {
+  flex: 1;
+}
+
+.list-content image {
+  width: 350rpx;
+  height: 350rpx;
+}
+
+.pic {
+  margin-right: 10rpx;
+}
+
+.button {
+  min-width: 310px;
+  font-size: 14px;
+  margin: 20px 0 10px 0;
+}
+
+.tips {
+  text-align: center;
+  color: #666666;
+  min-width: 310px;
+  font-size: 14px;
+  margin: 20px 0 10px 0;
+}

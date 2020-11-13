@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/identify/identify",
+    "pages/search/search",
+    "pages/albums/albums",
+    "pages/cloudImg/cloudImg",
+    "pages/takephoto/takephoto",
+    "pages/msg/msg",
+    "pages/science/science",
+    "pages/mine/mine",
+    "pages/PassageIno/PassageIno",
+    "pages/showResult/showResult",
+    "pages/largemushroom/largemushroom",
+    "pages/jianshouqing/jianshouqing",
+    "pages/discern/discern"
+
+  ],
+  "window": {
+    "backgroundColor": "#efeff4",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#efeff4",
+    "navigationBarTitleText": "菌鉴",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/identify/identify",
+        "text": "发现",
+        "iconPath": "pages/icon/photo.png",
+        "selectedIconPath": "pages/icon/_photo.png"
+      },
+      {
+        "pagePath": "pages/msg/msg",
+        "text": "资讯",
+        "iconPath": "pages/icon/msg.png",
+        "selectedIconPath": "pages/icon/_msg.png"
+      },
+      {
+        "pagePath": "pages/science/science",
+        "text": "科普",
+        "iconPath": "pages/icon/science.png",
+        "selectedIconPath": "pages/icon/_science.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "pages/icon/mine.png",
+        "selectedIconPath": "pages/icon/_mine.png"
+      }
+    ],
+    "color": "#707070",
+    "selectedColor": "#8ed297"
+  },
+
+  "sitemapLocation": "sitemap.json"
+
+}

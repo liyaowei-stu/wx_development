@@ -1,0 +1,100 @@
+<!-- 展示页面的开始 -- >
+<!-- 可指定bg-mask实现面罩效果 -->
+<view class="bg-img" style="background-image: url('https://s3.ax1x.com/2020/11/13/D9C7Se.jpg');height: 207px;">
+	<view class="grid padding-xl text-black col-1 fr">
+		<view class="padding-xs text-xl text-center text-white">野生菌</view>
+		<view class="text-center text-white">WILDFUNGI</view>
+	</view>
+</view>
+<!-- 展示页面的结束 -->
+
+<!-- 滑动框的开始-->
+<view class="VerticalBox padding-tb-sm">
+	<scroll-view class="VerticalNav nav" scroll-y scroll-with-animation scroll-top="{{VerticalNavTop}}"
+		style="height:calc(100vh - 375rpx)">
+		<view class="cu-item {{index==TabCur?'text-green cur':''}}" wx:for="{{list}}" wx:key="name" bindtap='tabSelect'
+			data-id="{{index}}">
+		{{item.name}}
+		</view>
+
+	</scroll-view>
+	<scroll-view class="VerticalMain" scroll-y scroll-with-animation style="height:calc(100vh - 375rpx)"
+		scroll-into-view="main-{{MainCur}}" bindscroll="VerticalMain">
+		<!-- 菌的种类的开始-->
+		<view class="padding" wx:for="{{list}}" wx:key="name" id="main-{{index}}">
+			<!-- 菌的种类的结束-->
+			<!-- 菌的详细介绍的开始-->
+			<view class='cu-bar solid-bottom bg-white'>
+				<view class='action'>
+					<text class='cuIcon-title text-green'></text> {{item.name}} </view>
+			</view>
+
+			<view class="cu-list menu-avatar">
+				<view class=" cu-item">
+					<view class="cu-avatar round lg" style="background-image:url(https://s3.ax1x.com/2020/11/12/BvowkT.jpg);">
+					</view>
+					<view class="content">
+						<view class="text-grey">羊肚菌</view>
+						<view class=" text-gray text-sm flex">
+							<text class="text-cut">
+								<text>羊肚菌是一种珍稀名贵食用野生菌，居四大名菌之首，具有益肠胃，化痰理气之功效，被誉为“菌中之王”。</text>
+							</text>
+						</view>
+					</view>
+				</view>
+				<view class="cu-item">
+					<view class="cu-avatar round lg" style="background-image:url(https://s3.ax1x.com/2020/11/12/BvoLHP.jpg);">
+					</view>
+					<view class="content">
+						<view class="text-grey">
+							<text class="text-cut">竹荪</text>
+						</view>
+						<view class="text-gray text-sm flex">
+							<text class="text-cut">
+								<text></text> 竹荪营养丰富，香味浓郁，滋味鲜美
+							</text>
+						</view>
+					</view>
+				</view>
+				<view class="cu-item ">
+					<view class="cu-avatar  round lg" style="background-image:url(https://s3.ax1x.com/2020/11/12/BvTV4U.png);">
+					</view>
+					<view class="content">
+						<view class="text-grey">
+							<text class="text-cut">老人头菌</text>
+						</view>
+						<view class="text-gray text-sm flex">
+							<text class="text-cut"> 老人头菌：又名仙人头，老人头生长在海拔1200米以上</text>
+						</view>
+					</view>
+				</view>
+				<view class="cu-item">
+					<view class="cu-avatar round lg" style="background-image:url(https://s3.ax1x.com/2020/11/12/BvTm34.png);">
+					</view>
+					<view class="content">
+						<view class="text-grey">
+							<text class="text-cut">黑松露</text>
+						</view>
+						<view class="text-gray text-sm flex">
+							<text class="text-cut"> 黑松露也称块菌，是一种生长于地下的野生食用真菌</text>
+						</view>
+					</view>
+				</view>
+				<view class="cu-item cur">
+					<view class="cu-avatar round lg" style="background-image:url(https://s3.ax1x.com/2020/11/12/BvTngJ.png);">
+					</view>
+					<view class="content">
+						<view class="text-grey">
+							<text class="text-cut">黑虎掌菌</text>
+						</view>
+						<view class="text-gray text-sm flex">
+							<text class="text-cut"> 黑虎掌菌学名枣翘鳞肉齿菌，是著名的出口食用菌之一。</text>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</scroll-view>
+	<!-- 菌的详细介绍的开始-->
+</view>
+<!-- 滑动框的结束-->

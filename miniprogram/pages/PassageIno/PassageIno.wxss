@@ -1,0 +1,16 @@
+/* pages/PassageIno/PassageIno.wxss */
+.detail {
+  font-size: 14px;
+  font-weight: 500;
+  padding-left: 8px;
+  padding-right: 8px;
+  color: rgb(46, 45, 45);
+}
+.images{
+  margin-top: 8px;
+  margin-bottom: 6px;
+}
+
+.myimage{
+  text-align: center;
+}

@@ -1,0 +1,31 @@
+<view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-xl padding">
+        <text class="text-black text-bold">世界十大致命毒蘑菇</text>
+      </view>
+    </view>
+  </view>
+
+<view class="detail">
+  <view >{{siwangmao}}</view>
+  <view class="myimage"><image src="https://s1.ax1x.com/2020/11/10/BqQTy9.jpg" class="images"></image></view>
+  <view >{{xuejia}}</view>
+  <view class="myimage"><image src="https://s1.ax1x.com/2020/11/10/BqleSg.jpg" class="images"></image></view>
+  <view >{{xuechijun}}</view>
+  <view class="myimage"><image src="https://s1.ax1x.com/2020/11/10/Bq1Pc4.png" class="images"></image></view>
+  <view >{{tianlanmogu}}</view>
+  <view class="myimage"><image src="https://s1.ax1x.com/2020/11/10/Bq8N6g.png" class="images"></image></view>
+  <view >{{duegao}}</view>
+  <view class="myimage"><image src="https://s1.ax1x.com/2020/11/10/BqYGfx.png" class="images"></image></view>
+  <view >{{luhuajun}}</view>
+  <view class="myimage"><image src="https://s1.ax1x.com/2020/11/10/BqGS4P.png" class="images"></image></view>
+  <view >{{siwangtianshi}}</view>
+  <view class="myimage"><image src="https://s1.ax1x.com/2020/11/10/BqG4Kg.jpg" class="images"></image></view>
+  <view >{{yingguangxiaogu}}</view>
+  <view class="myimage"><image src="https://s1.ax1x.com/2020/11/10/BqJudA.jpg" class="images"></image></view>
+  <view >{{snaxingdujun}}</view>
+  <view class="myimage"><image src="https://s1.ax1x.com/2020/11/10/BqJ7Oe.jpg" class="images"></image></view>
+  <view >{{yunzhi}}</view>
+  <view class="myimage"><image src="https://s1.ax1x.com/2020/11/10/BqJjYt.jpg" class="images"></image></view>
+
+</view>  
