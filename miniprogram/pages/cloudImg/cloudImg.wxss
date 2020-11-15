@@ -13,5 +13,4 @@ textarea {
 button {
   border-radius: 0 !important;
   width: 100% !important;
-  background-color: lightcyan !important;
 }
