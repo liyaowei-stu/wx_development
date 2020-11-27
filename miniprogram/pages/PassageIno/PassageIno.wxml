@@ -1,6 +1,6 @@
 <view class="solids-bottom padding-xs flex align-center">
     <view class="flex-sub text-center">
-      <view class="solid-bottom text-xl padding">
+      <view class="solid-bottom text-xxl padding">
         <text class="text-black text-bold">世界十大致命毒蘑菇</text>
       </view>
     </view>

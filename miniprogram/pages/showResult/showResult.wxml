@@ -47,7 +47,7 @@
         <view class="cu-dialog">
           <!-- 对话框标题的开始 -->
           <view class="cu-bar bg-white justify-end">
-            <view class="content">Tips</view>
+            <view class="content">识别结果</view>
             <!-- 关闭 -->
             <view class="action" bindtap="hideModal">
               <text class="cuIcon-close text-red"></text>

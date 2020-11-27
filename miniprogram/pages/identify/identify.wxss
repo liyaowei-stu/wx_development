@@ -124,3 +124,7 @@
   width: 328rpx;
 }
 
+.button1 {
+  border-radius: 0 !important;
+  width: 100% !important;
+}

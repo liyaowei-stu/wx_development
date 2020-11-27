@@ -1,15 +1,15 @@
 <view class="solids-bottom padding-tb-sm flex align-center">
     <view class="flex-sub text-center">
-      <view class="solid-bottom text-xl padding-lr-xl">
+      <view class="solid-bottom text-xxl padding-lr-xl">
         <text class="text-black text-bold">云南一村民捡到一窝巨型野生菌：重达156公斤</text>
       </view>
     </view>
   </view>
   <view class="detail">
-    <text class="padding-tb-xl">{{p1}}\n</text>
-    <text >{{p2}}\n</text>
-    <text >{{p3}}\n</text>
-    <text >{{p4}}\n</text>
-    <text >{{p5}}\n</text>
+    <text class="row_spacing" decode="true">&emsp;&emsp;{{p1}}\n</text>
+    <text class="row_spacing" decode="true">&emsp;&emsp;{{p2}}\n</text>
+    <text class="row_spacing" decode="true">&emsp;&emsp;{{p3}}\n</text>
+    <text class="row_spacing" decode="true">&emsp;&emsp;{{p4}}\n</text>
+    <text class="row_spacing" decode="true">&emsp;&emsp;{{p5}}\n</text>
     <view class="myimg"><image src="https://s3.ax1x.com/2020/11/12/Bzw5lD.png" class="images"></image></view>
   </view>

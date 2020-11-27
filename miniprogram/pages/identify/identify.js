@@ -80,7 +80,7 @@ Page({
         })
         // console.log('临时路径：' + res.tempFilePaths[0])
         wx.uploadFile({
-          url: 'http://124.70.130.61:80/predict',
+          url: 'https://zzg90576.xyz:10001/predict',
           filePath: res.tempFilePaths[0],
           //header:{"chartset":"gbk"},
           header: {

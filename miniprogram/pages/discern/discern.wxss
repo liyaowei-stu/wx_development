@@ -1,6 +1,6 @@
 /* pages/discern/discern.wxss */
 .detail {
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 500;
   padding-left: 8px;
   padding-right: 8px;
@@ -13,3 +13,7 @@
 .myimg {
   text-align: center;
 }
+/* 行距 */
+.row_spacing{
+  line-height:28px;
+  }

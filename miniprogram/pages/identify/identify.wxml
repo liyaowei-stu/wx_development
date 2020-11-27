@@ -65,7 +65,7 @@
 
 
 <!-- 底部窗口的开始 -->
-<view class="cu-modal bottom-modal {{modalName=='bottomModal'?'show':''}}">
+<view  class="cu-modal bottom-modal {{modalName=='bottomModal'?'show':''}}">
 	<view class="cu-dialog">
 		<view class="cu-bar bg-white">
 			<view class="action text-green" bindtap="hideModal">确定</view>
@@ -88,8 +88,14 @@
 				<view class="padding-tb-xs">分布地区：<text>{{name[con.class_id][5]}}</text></view>
 				<view class="padding-tb-xs">食用价值：<text>{{name[con.class_id][6][0]}}</text></view>
 				<view class="padding-tb-xs">药用价值：<text>{{name[con.class_id][6][1]}}</text></view>
+				<view class="margin-tb-sm text-center">
+				<button class="cu-btn lines-blue lg button-hover button1" bindtap="hideModal">
+					<text class="cuIcon-footprint ">返回</text> 
+				</button>
+			</view>
 			</view>
 			<!-- 显示相应的野生菌识别结果的结束 -->
+
 		</view>
 		<!-- 底部窗口的内容结束 -->
 	</scroll-view>

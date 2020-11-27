@@ -1,10 +1,12 @@
 /* pages/PassageIno/PassageIno.wxss */
 .detail {
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 500;
   padding-left: 8px;
   padding-right: 8px;
   color: rgb(46, 45, 45);
+  /* 行距 */
+  line-height:28px;
 }
 .images{
   margin-top: 8px;

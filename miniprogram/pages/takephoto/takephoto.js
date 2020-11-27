@@ -45,7 +45,7 @@ Page({
   imageIdentify: function (res) {
     var that = this
     wx.uploadFile({
-      url: 'http://124.70.130.61:80/predict',
+      url: 'https://zzg90576.xyz:10001/predict',
       filePath: res.tempImagePath,
       header: {
         "content-type": "multipart/form-data",

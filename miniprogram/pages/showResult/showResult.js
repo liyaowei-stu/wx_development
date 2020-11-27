@@ -23,7 +23,7 @@ Page({
       // 野生菌集合对应的id
       class_id: options.class_id,
     })
-    if(options.class_id!=18){
+    if(options.class_id!=21){
       this.setData({
         show: true,
       })
